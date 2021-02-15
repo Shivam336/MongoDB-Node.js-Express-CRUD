@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READED-ALL</title>
+</head>
+<body>
+    <h1>Login APP - READ-ALL FUNCTIONALITY</h1>
+    <% if(details!=null) { %>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+        <% details.forEach(function(item){  %>
+            <tr>
+                <td><%= item.username%></td>
+                <td><%= item.password %></td>
+            </tr>
+            <% }) %>
+    </table>
+    <% } %>
+</body>
+</html>
